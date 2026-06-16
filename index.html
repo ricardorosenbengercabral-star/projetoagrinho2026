@@ -1,118 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agro Forte, Futuro Sustentável</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#f4f4f4;
-color:#333;
-line-height:1.6;
-}
-
-header{
-background:#2e7d32;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-background:#1b5e20;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-.banner{
-background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover;
-height:400px;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.banner h1{
-background:rgba(0,0,0,0.5);
-padding:20px;
-border-radius:10px;
-}
-
-section{
-padding:40px 10%;
-}
-
-section h2{
-color:#2e7d32;
-margin-bottom:15px;
-}
-
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-flex:1;
-min-width:250px;
-}
-
-button{
-background:#2e7d32;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#1b5e20;
-}
-
-form{
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-input, textarea{
-padding:10px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-footer{
-background:#1b5e20;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
-</style>
 </head>
 
 <body>
@@ -217,27 +109,19 @@ Saiba Mais
 <section id="contato">
 <h2>Contato e Conscientização</h2>
 
-<form>
+<form id="formulario">
 <input type="text" placeholder="Seu nome" required>
 <input type="email" placeholder="Seu e-mail" required>
-<textarea rows="5" placeholder="Sua mensagem"></textarea>
+<textarea rows="5" placeholder="Sua mensagem" required></textarea>
 <button type="submit">Enviar</button>
 </form>
 </section>
 
 <footer>
-<p>
-© 2026 - Agro Forte, Futuro Sustentável
-</p>
+<p>© 2026 - Agro Forte, Futuro Sustentável</p>
 </footer>
 
-<script>
-function mostrarMensagem(){
-document.getElementById("mensagem").innerHTML =
-"A tecnologia e a sustentabilidade podem caminhar juntas para garantir um futuro melhor.";
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
